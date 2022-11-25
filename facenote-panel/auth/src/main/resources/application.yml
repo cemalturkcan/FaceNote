@@ -1,10 +1,10 @@
 server:
-  port: 9150
+  port: 9050
 spring:
   application:
-    name: message
+    name: auth
   datasource:
-    url: jdbc:postgresql://localhost:49153/message
+    url: jdbc:postgresql://localhost:49153/auth
     username: postgres
     password: postgrespw
   jpa:
