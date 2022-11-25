@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/FaceNote.iml" filepath="$PROJECT_DIR$/.idea/FaceNote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facenote-panel/core/core.iml" filepath="$PROJECT_DIR$/facenote-panel/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facenote-panel/eureka/eureka.iml" filepath="$PROJECT_DIR$/facenote-panel/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facenote-panel/message/message.iml" filepath="$PROJECT_DIR$/facenote-panel/message/message.iml" />
+    </modules>
+  </component>
+</project>
