@@ -1,0 +1,86 @@
+.message-main {
+  font-family:  "Segoe UI", "Helvetica", "Arial", "sans-serif";
+}
+.contacts-search-message-settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 17px;
+  color: #b0b3b8;
+  line-height: 20px;
+}
+svg {
+  fill: #b0b3b8;
+}
+button {
+  background: #18191A;
+}
+.search-message-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.search-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+.settings-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
+button:hover {
+  background: #303031;
+}
+.search-ico{
+  width: 16px;
+  height: 16px;
+}
+.settings-ico {
+  width: 20px;
+  height: 20px;
+}
+
+.online-contacts-container {
+  position: relative;
+}
+
+.online-contacts {
+  margin-top: 0.8rem;
+  color: #e4e6eb;
+  max-height: calc(100vh - (47px + 56px));
+}
+.online-contact {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.online-contact span {
+  padding: 12px;
+}
+.online-contact:hover {
+  background: #303031;
+}
+.online-contact:hover .online-contact-detail {
+  display: flex;
+}
+
+.online-contacts img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
+
+.online-contact-detail {
+  position: absolute;
+  left: -120%;
+  display: none;
+}

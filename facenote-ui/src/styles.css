@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  background: #18191A;
+}
+
+app-root {
+  display: grid;
+  grid-template-columns: minmax(24rem, 36rem) minmax(32rem, 1fr) minmax(24rem, 36rem);
+  grid-template-rows: 56px 1fr;
+}
+
+app-nav-bar{
+  position: sticky;
+  height: 56px;
+  top: 0;
+  grid-row: 1;
+  grid-column: 1;
+  grid-column-end: 4;
+  background: #6189ea;
+}
+app-left-nav {
+  max-width: 36rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-end:  2;
+  position: sticky;
+  left: 0;
+  top: 56px;
+  background: #f334f1;
+}
+app-message-main {
+  max-width: 36rem;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-end: 2;
+  position: sticky;
+  left: 0;
+  top: 56px;
+  right: 0;
+  grid-column: 3;
+}
+app-main-content {
+  grid-row-start: 2;
+  grid-row-end: -1;
+  background: aqua;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 200rem;
+}
+a {
+  text-decoration: none;
+  color:  black;
+}
+
+button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/*.os-theme-dark {*/
+/*  background: rgba(255, 255, 255, 0) !important;*/
+/*}*/
+/*.os-scrollbar-vertical {*/
+/*  width: 16px !important;*/
+/*}*/
+/*.os-scrollbar-horizontal {*/
+/*  height: 13px !important;*/
+/*}*/
+
+
+/*.os-scrollbar-interaction:hover {*/
+/*  background: rgba(35, 37, 38, 0.53) !important;*/
+/*}*/
+
+/*.os-theme-dark.os-scrollbar {*/
+/*  padding: 4px !important;*/
+
+/*}*/
+/*.os-scrollbar-track {*/
+/*  padding: 10px !important;*/
+/*}*/
+/*.os-scrollbar-handle {*/
+/*  background: rgba(100, 101, 101, 0.7) !important;*/
+/*}*/
