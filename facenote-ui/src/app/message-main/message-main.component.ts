@@ -12,21 +12,46 @@ export class MessageMainComponent implements OnInit, OnChanges{
 
   }
 
-  func() {
+  rePositionInfo() {
     document.querySelectorAll<HTMLElement>('div.online-contact').forEach(function (el) {
       el.addEventListener('mouseover', function () {
         let wrapper = el.querySelector<HTMLElement>('.online-contact-detail');
-        if (wrapper != null) {
-          wrapper.style.top = String(el?.getBoundingClientRect().top -75  )+ "px";
-          console.log(el.getBoundingClientRect().top)
+        if (wrapper === null)
+          return;
+        console.log(el.getBoundingClientRect().top)
+        console.log(window.innerHeight)
+        if (el.getBoundingClientRect().top+100 >= window.innerHeight){
+          console.log("hi")
         }
+        wrapper.style.top = String(el?.getBoundingClientRect().top -100  )+ "px";
       })
     })
   }
 
   ngOnInit(): void {
-    this.func();
+    this.rePositionInfo();
     OverlayScrollbars(document.querySelector('.online-contacts') as HTMLElement, {
+      paddingAbsolute: false,
+      showNativeOverlaidScrollbars: false,
+      update: {
+        elementEvents: [['img', 'load']],
+        debounce: [0, 33],
+        attributes: null,
+        ignoreMutation: null,
+      },
+      overflow: {
+        x: 'scroll',
+        y: 'scroll',
+      },
+      scrollbars: {
+        theme: 'os-theme-dark',
+        visibility: 'auto',
+        autoHide: 'leave',
+        autoHideDelay: 400,
+        dragScroll: true,
+        clickScroll: true,
+        pointers: ['mouse', 'touch', 'pen'],
+      },
     });
   }
 
