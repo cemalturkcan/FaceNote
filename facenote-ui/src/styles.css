@@ -41,7 +41,7 @@ app-left-nav {
   position: sticky;
   left: 0;
   top: 56px;
-  background: #f334f1;
+  background: #463d46;
 }
 app-message-main {
   max-width: 36rem;
@@ -57,7 +57,7 @@ app-message-main {
 app-main-content {
   grid-row-start: 2;
   grid-row-end: -1;
-  background: aqua;
+  background: #282c2c;
   grid-column-start: 2;
   grid-column-end: 3;
   height: 200rem;
@@ -73,28 +73,28 @@ button {
   cursor: pointer;
 }
 
-/*.os-theme-dark {*/
-/*  background: rgba(255, 255, 255, 0) !important;*/
-/*}*/
-/*.os-scrollbar-vertical {*/
-/*  width: 16px !important;*/
-/*}*/
-/*.os-scrollbar-horizontal {*/
-/*  height: 13px !important;*/
-/*}*/
+.os-theme-dark {
+  background: rgba(255, 255, 255, 0) !important;
+}
+.os-scrollbar-vertical {
+  width: 16px !important;
+}
+.os-scrollbar-horizontal {
+  height: 13px !important;
+}
 
 
-/*.os-scrollbar-interaction:hover {*/
-/*  background: rgba(35, 37, 38, 0.53) !important;*/
-/*}*/
+.os-scrollbar-interaction:hover {
+  background: rgba(35, 37, 38, 0.53) !important;
+}
 
-/*.os-theme-dark.os-scrollbar {*/
-/*  padding: 4px !important;*/
+.os-theme-dark.os-scrollbar {
+  padding: 4px !important;
 
-/*}*/
-/*.os-scrollbar-track {*/
-/*  padding: 10px !important;*/
-/*}*/
-/*.os-scrollbar-handle {*/
-/*  background: rgba(100, 101, 101, 0.7) !important;*/
-/*}*/
+}
+.os-scrollbar-track {
+  padding: 10px !important;
+}
+.os-scrollbar-handle {
+  background: rgba(100, 101, 101, 0.7) !important;
+}
