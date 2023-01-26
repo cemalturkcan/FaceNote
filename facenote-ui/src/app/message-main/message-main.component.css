@@ -52,7 +52,6 @@ button:hover {
 .online-contacts-container {
   position: relative;
 }
-
 .online-contacts {
   margin-top: 0.8rem;
   color: #e4e6eb;
@@ -74,93 +73,14 @@ button:hover {
 .online-contact:hover {
   background: #303031;
 }
-
 .online-contacts img {
   width: 36px;
   height: 36px;
   border-radius: 100%;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
-
-.online-contact-detail {
-  border: #3A3B3C 1px solid;
-  position: absolute;
-  left: -113%;
-  transition: opacity .4s;
-  width: 40rem;
-  height: 18.9rem;
-  background: #242526;
-  border-radius: 8px;
-}
-.online-contact-detail img {
-  width: 96px;
-  height: 96px;
-}
-.online-contact-detail-layer {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  gap: 16px;
-}
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-.button {
-  background: #3a3b3c;
-  color: #fdfdfd;
-  font-size: 1.5rem;
-  font-weight: 600;
-  width: 15.6rem;
-  height: 3.6rem;
-  border-radius: 8px;
-}
-.message {
-  background: #2373df;
-}
-.person-settings {
-  width: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: #fdfdfd;
-}
-.person-settings  svg{
-  width: 2rem;
-  height: 1.5rem;
-  fill: #fdfdfd;
-}
-.online-contact-detail-layer02 {
-  padding-left: 12px;
-  padding-right: 12px;
-  display: flex;
-}
-.online-contact:hover .online-contact-detail {
-  opacity: 1;
-  visibility: visible;
-}
-.infos {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1.6rem;
-  gap: 1.6rem;
-}
-.name-surname-detail-sec {
-  font-size: 20px;
-  font-weight: 700;
-  padding: 4px 0 0 0;
-  margin-bottom: 8px;
-}
-
-.info {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
-

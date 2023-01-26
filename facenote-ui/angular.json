@@ -26,7 +26,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/overlayscrollbars.css"
+              "node_modules/overlayscrollbars/styles/overlayscrollbars.css"
             ],
             "scripts": []
           },

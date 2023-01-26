@@ -1,0 +1,24 @@
+*{
+  font-family:  "Segoe UI", "Helvetica", "Arial", "sans-serif";
+  font-weight: 500;
+  color: #e4e6eb;
+  font-size: 15px;
+}
+
+.left-nav-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 1.6rem;
+}
+.left-nav-element {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.user-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
